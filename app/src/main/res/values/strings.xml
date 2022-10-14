@@ -1,0 +1,17 @@
+<resources>
+	<string name="app_name">event application</string>
+
+	<string name="dashboard_title">Dashboard</string>
+	<string name="dashboard_heading">Find Amazing events happening around you.</string>
+	<string name="dashboard_sub_title">480 events around you</string>
+	<string name="search_bar_hint">search for an event...</string>
+	<string name="slogan">There\'s a lot happening around you our mission is to</string>
+	<string name="slogan1">provide what\'s happening near you !!</string>
+	<string name="about_me">About Me</string>
+	<string name="my_desc">Doing at the sweet spot between aesthetics and elegance to give life to your brand.My opinion belong to nobody but myself.</string>
+	<string name="skills">Skills</string>
+	<string name="contact">Contact</string>
+	<string name="location">Vagator Beach, Goa, India</string>
+	<string name="desc">Sunburn Festival is Asia\'s biggest electronic music festival, and this December the festival returns to its homeland – Goa – for three sprawling days of house, EDM and pop on Vagator Beach. Recent lineups have included dance royalty such as Martin Garrix, Afrojack, Dimitri Vegas and Like Mike and many more </string>
+
+</resources>

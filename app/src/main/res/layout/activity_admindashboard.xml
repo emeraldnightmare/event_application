@@ -9,7 +9,7 @@
 	android:background="#fcfcfc"
 	android:gravity="center"
 	android:orientation="vertical"
-
+android:padding="10dp"
 	tools:context=".admindashboard_activity">
 
 
@@ -27,12 +27,14 @@
 		android:visibility="visible" />
 
 	<GridLayout
+
 		android:id="@+id/mainGrid1"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_gravity="center"
 		android:columnCount="2"
 		android:padding="20dp"
+		android:layout_margin="10dp"
 		android:rowCount="3">
 
 
@@ -86,6 +88,7 @@
 			</LinearLayout>
 
 		</androidx.cardview.widget.CardView>
+
 
 		<androidx.cardview.widget.CardView
 			android:layout_width="160dp"
@@ -178,6 +181,7 @@
 			</LinearLayout>
 		</androidx.cardview.widget.CardView>
 
+
 		<androidx.cardview.widget.CardView
 			android:layout_width="160dp"
 			android:layout_height="190dp"
@@ -222,6 +226,7 @@
 			</LinearLayout>
 		</androidx.cardview.widget.CardView>
 
+
 		<androidx.cardview.widget.CardView
 			android:layout_width="160dp"
 			android:layout_height="190dp"
@@ -265,6 +270,8 @@
 
 			</LinearLayout>
 		</androidx.cardview.widget.CardView>
+
+
 		<androidx.cardview.widget.CardView
 			android:layout_width="160dp"
 			android:layout_height="190dp"

@@ -3,6 +3,7 @@ package com.example.eventapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -49,7 +50,8 @@ public class createEvent_activity extends AppCompatActivity {
 
                 if(valid){
                     insertEventdata();
-
+                    startActivity(new Intent(getApplicationContext(),admindashboard_activity.class));
+                    finish();
                 }
                 else{
                     Toast.makeText(createEvent_activity.this, "error", Toast.LENGTH_SHORT).show();

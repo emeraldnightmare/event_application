@@ -10,9 +10,9 @@
 			android:title="Home"
 			android:icon="@drawable/main_menu"/>
 		<item
-			android:id="@+id/nav_search"
-			android:title="Search"
-			android:icon="@drawable/ic_baseline_search_24"/>
+			android:id="@+id/nav_registeredEvent"
+			android:title="Registered event"
+			android:icon="@drawable/eventcreate"/>
 
 		<item
 			android:id="@+id/nav_location"

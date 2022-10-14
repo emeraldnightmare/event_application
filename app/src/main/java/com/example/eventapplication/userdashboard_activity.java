@@ -53,30 +53,30 @@ public class userdashboard_activity extends AppCompatActivity implements Navigat
               eventDetails = findViewById(R.id.Details);
         navigationDrawer();
         //listview
-        myList = findViewById(R.id.eventcreatedlist);
+     //   myList = findViewById(R.id.eventcreatedlist);
         eventList = new ArrayList<>();
 
 
-        reference = FirebaseDatabase.getInstance().getReference("EventsCreated");
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                eventList.clear();
-                for(DataSnapshot eventDatasnap : snapshot.getChildren()){
-                    eventCreationhelperclass events = eventDatasnap.getValue(eventCreationhelperclass.class);
-                    eventList.add(events);
-                }
-               usereventshowadapter_activity adminalleventadapterclass = new usereventshowadapter_activity(userdashboard_activity.this,eventList);
-                myList.setAdapter(adminalleventadapterclass);
-                myList.setClickable(true);
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        reference = FirebaseDatabase.getInstance().getReference("EventsCreated");
+//        reference.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                eventList.clear();
+//                for(DataSnapshot eventDatasnap : snapshot.getChildren()){
+//                    eventCreationhelperclass events = eventDatasnap.getValue(eventCreationhelperclass.class);
+//                    eventList.add(events);
+//                }
+//               usereventshowadapter_activity adminalleventadapterclass = new usereventshowadapter_activity(userdashboard_activity.this,eventList);
+//                myList.setAdapter(adminalleventadapterclass);
+//                myList.setClickable(true);
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
 
 
 
@@ -127,12 +127,13 @@ public class userdashboard_activity extends AppCompatActivity implements Navigat
         {
             startActivity(new Intent(getApplicationContext(), userProfile_activity.class));
 
+        }else if(id == R.id.nav_registeredEvent){
+            startActivity(new Intent(getApplicationContext(),userregistered_Event.class));
         }
         else if(id == R.id.nav_logout){
             startActivity(new Intent(getApplicationContext(),login_activity.class));
             FirebaseAuth.getInstance().signOut();
             finish();
-
 
         }
 

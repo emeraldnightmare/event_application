@@ -32,8 +32,8 @@ public class userdashboard_activity extends AppCompatActivity implements Navigat
     NavigationView navigationView;
     ImageView menuicon;
 
-//    //event details
-//    Button eventDetails;
+//     event details
+  Button eventDetails;
 //
     //listview
     ListView myList;
@@ -41,6 +41,7 @@ public class userdashboard_activity extends AppCompatActivity implements Navigat
     DatabaseReference reference;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +50,7 @@ public class userdashboard_activity extends AppCompatActivity implements Navigat
         menuicon = findViewById(R.id.menu_icon);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_layout);
-//        eventDetails = findViewById(R.id.Details);
+              eventDetails = findViewById(R.id.Details);
         navigationDrawer();
         //listview
         myList = findViewById(R.id.eventcreatedlist);
@@ -102,14 +103,14 @@ public class userdashboard_activity extends AppCompatActivity implements Navigat
 
 
         //event details form
-//        eventDetails.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Intent intent = new Intent(getApplicationContext(),oneventClick_activity.class);
-//                startActivity(intent);
-//            }
-//        });
+        eventDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(),oneventClick_activity.class);
+                startActivity(intent);
+            }
+        });
 
 
 
